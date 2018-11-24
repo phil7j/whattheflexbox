@@ -26,11 +26,20 @@ a {
 }
 
 .item {
-  background:rgba(255,255,255,0.2);
   margin:10px;
   padding:20px;
   font-size: 30px;
+  background:rgba(255,255,255,0.2);
 }
 
 /* Flexbox Starts Here: */
 
+.elements {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.item {
+  flex: 0 1 calc(25% - 20px);
+}

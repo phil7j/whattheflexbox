@@ -97,8 +97,31 @@ a.button {
   Flexbox + Important CSS Starts Here
 
 */
+.app-wrap {
+  display: flex;
+  flex-direction: column;
+}
 
+.app-wrap * > {
+flex: 1 1 auto;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-bar {
+  display: flex;
+  align-items: baseline;
+}
 
 /*
   Overall Layout
 */
+
+.content {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}

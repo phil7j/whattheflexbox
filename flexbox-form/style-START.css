@@ -27,11 +27,13 @@ a {
 
 .dog {
   height:100%;
+  width: 100%;
   -webkit-filter:blur(5px);
   filter:blur(5px);
   position: absolute;
   top: 0;
   z-index: -1;
+  
 }
 
 /*Hack to get them to align properly */
@@ -64,3 +66,19 @@ a {
 }
 
 /*Flexbox Starts Here*/
+
+.cover {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-form {
+  align-self: center;
+  display: flex;
+  border: 20px solid rgba(0,0,0,0.3);
+  border-radius: 5px;
+}
+
+input[type= "search"] {
+  flex-basis: 450px;
+}
